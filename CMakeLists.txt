@@ -109,6 +109,11 @@ if(NOT FREETYPE2_FOUND)
 	message(FATAL_ERROR "freetype2 required to compile gr-fosphor")
 endif()
 
+find_package(png)
+if(NOT PNG_FOUND)
+	message(FATA_ERROR "png require to compile gr-fosphor")
+endif()
+
 # Optional
 find_package(GLFW3)
 
